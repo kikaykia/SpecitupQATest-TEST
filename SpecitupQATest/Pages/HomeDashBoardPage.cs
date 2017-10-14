@@ -13,6 +13,7 @@ namespace SpecitupQATest.Pages
         
         private IWebDriver driver;
 
+        #region oldCode
         //[FindsBy(How = How.ClassName, Using = "siuAlert siuAlert-info")]
         //[CacheLookup]
         //private IWebElement HomepageText { get; set; }
@@ -32,7 +33,7 @@ namespace SpecitupQATest.Pages
         //[FindsBy(How = How.LinkText, Using = "Phases")]
         //[CacheLookup]
         //private IWebElement PhasesLink { get; set; }
-        
+
         //[FindsBy(How = How.LinkText, Using = "Series")]
         //[CacheLookup]
         //private IWebElement SeriesLink { get; set; }
@@ -44,7 +45,7 @@ namespace SpecitupQATest.Pages
         //[FindsBy(How = How.LinkText, Using = "Attributes")]
         //[CacheLookup]
         //private IWebElement AttributesLink { get; set; }
-        
+
         //[FindsBy(How = How.LinkText, Using = "Manual Options")]
         //[CacheLookup]
         //private IWebElement ManualOptionsLink { get; set; }
@@ -69,6 +70,7 @@ namespace SpecitupQATest.Pages
         //[FindsBy(How = How.LinkText, Using = "Rules")]
         //[CacheLookup]
         //private IWebElement RulesLink { get; set; }
+        #endregion
 
         #endregion
 
@@ -84,6 +86,15 @@ namespace SpecitupQATest.Pages
 
         #region methods
 
+        public void ClickRuleGroups()
+        {
+            //BaseClass.Click()
+        }
+
+
+
+
+        #region oldCode
         //public void ClickModelsLink()
         //{
         //    ModelsLink.Click();
@@ -104,7 +115,7 @@ namespace SpecitupQATest.Pages
         //{
         //    PhasesLink.Click();
         //}
-        
+
         //public void ClickSeriesLink()
         //{
         //    SeriesLink.Click();
@@ -149,6 +160,8 @@ namespace SpecitupQATest.Pages
         //{
         //    RulesLink.Click();
         //}
+        #endregion
+
 
         #endregion
 

@@ -51,19 +51,23 @@ namespace SpecitupQATest.Pages
             //Submit.Submit();
 
             //OPTION #2:
-            BaseClass.EnterText("EmailAddress", "kiara.imbong+demo1@gmail.com", PropertyType.Id);
+            BaseClass.EnterText("EmailAddress", "kiara.imbong+demo2@gmail.com", PropertyType.Id);
             BaseClass.EnterText("Password", "qa12345", PropertyType.Id);
-
-            //Console.Write("The username is:" + BaseClass.GetText(_driver, "EmailAddress", PropertyType.Id));
-            //Console.Write("The password is:" + BaseClass.GetText(_driver, "Password", PropertyType.Id));
-
             BaseClass.Click("btn-primary", PropertyType.ClassName);
         }
 
         //Check if user is directed to the homepage
         public void CheckHomepage()
         {
-            
+
+            //if (isElementPresent(By.linkText("Submit")))
+            //{
+            //    System.out.println("SUBMIT Link/Button found");
+            //}
+            //else
+            //{
+            //    System.out.println("SUBMIT Link/Button not found");
+            //}
         }
 
         #endregion

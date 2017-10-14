@@ -12,7 +12,8 @@ namespace SpecitupQATest.Pages
     {
         Id,
         Name,
-        ClassName
+        ClassName,
+        HRef
 
     }
 

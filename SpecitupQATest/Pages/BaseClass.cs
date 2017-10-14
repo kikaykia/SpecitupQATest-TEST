@@ -36,6 +36,7 @@ namespace SpecitupQATest.Pages
                 PropertiesCollection.driver.FindElement(By.Name(element)).Click();
             if (elementtype == PropertyType.ClassName)
                 PropertiesCollection.driver.FindElement(By.ClassName(element)).Click();
+
         }
         #endregion
 
@@ -46,6 +47,8 @@ namespace SpecitupQATest.Pages
                 new SelectElement(PropertiesCollection.driver.FindElement(By.Id(element))).SelectByText(value);
             if (elementtype == PropertyType.Name)
                 new SelectElement(PropertiesCollection.driver.FindElement(By.Name(element))).SelectByText(value);
+            if (elementtype == PropertyType.ClassName)
+                new SelectElement(PropertiesCollection.driver.FindElement(By.ClassName(element))).SelectByText(value);
             if (elementtype == PropertyType.ClassName)
                 new SelectElement(PropertiesCollection.driver.FindElement(By.ClassName(element))).SelectByText(value);
         }

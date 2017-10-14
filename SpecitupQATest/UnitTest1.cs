@@ -44,29 +44,12 @@ namespace SpecitupQATest
         }
 
         #region Additional test attributes
-        //
-        // You can use the following additional attributes as you write your tests:
-        //
-        // Use ClassInitialize to run code before running the first test in the class
-        // [ClassInitialize()]
-        // public static void MyClassInitialize(TestContext testContext) { }
-        //
-        // Use ClassCleanup to run code after all tests in a class have run
-        // [ClassCleanup()]
-        // public static void MyClassCleanup() { }
-        //
-        // Use TestInitialize to run code before running each test 
-        // [TestInitialize()]
-        // public void MyTestInitialize() { }
-        //
-        // Use TestCleanup to run code after each test has run
-        // [TestCleanup()]
-        // public void MyTestCleanup() { }
-        //
+       
         #endregion
 
         #region variables
-        //ChromeDriver _browser = new ChromeDriver("C:\\Users\\kiara\\Documents\\SPEC\\automation\\");
+        
+
         #endregion
 
         [SetUp]
@@ -74,28 +57,21 @@ namespace SpecitupQATest
         {
             PropertiesCollection.driver = new ChromeDriver();
             PropertiesCollection.driver.Navigate().GoToUrl("https://specitupv3test.cloudapp.net/Account/Login");
-            //_browser.Navigate().GoToUrl("https://specitupv3test.cloudapp.net/Account/Login");
         }
-        
+
 
         [Test]
         public void TestMethod1()
         {            
-            //ChromeDriver _browser = new ChromeDriver("C:\\Users\\kiara\\Documents\\SPEC\\automation\\");
-            //_browser.Navigate().GoToUrl("https://specitupv3test.cloudapp.net/Account/Login");
             var loginPage = new LoginPage(PropertiesCollection.driver);
-            loginPage.LoginToApplication();
-
-            
+            loginPage.LoginToApplication();                       
 
             var homeDashboardPage = new HomeDashBoardPage(PropertiesCollection.driver);
-            homeDashboardPage.ClickAutoOptionsLink();
-           
+           //homeDashboardPage.ClickAutoOptionsLink();           
 
         }
 
-
-
+        
 
         // This closes the driver down after the test has finished.  
         [TearDown]
