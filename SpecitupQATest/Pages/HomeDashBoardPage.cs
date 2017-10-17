@@ -86,11 +86,27 @@ namespace SpecitupQATest.Pages
 
         #region methods
 
+        #region LogoutFromSite
+        public void LogoutFromSite()
+        {
+            BaseClass.Click("dropdown-toggle padding-right-18 padding-left-7", PropertyType.ClassName);
+
+            //string variable = "javascript:document.getElementById('logoutForm').submit()";
+            //driver.FindElement('//a[@href="' + variable + '"]');
+            //IWebElement link = driver.FindElementByCssSelector("[href*='edit']");
+            //By.CssSelector("[href*='Vacancies.aspx?param=apply:16']")
+
+            string variable = "'logoutForm'";
+            driver.FindElement(By.XPath("//a[contains(@href,'" + variable + "')]"));
+
+        }
+        #endregion
+
+
         public void ClickRuleGroups()
         {
             //BaseClass.Click()
         }
-
 
 
 

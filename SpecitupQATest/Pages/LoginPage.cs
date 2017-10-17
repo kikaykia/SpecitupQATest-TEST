@@ -17,17 +17,17 @@ namespace SpecitupQATest.Pages
 
 
 
-        [FindsBy(How = How.Id, Using = "EmailAddress")]
-        [CacheLookup]
-        private IWebElement EmailAddress { get; set; }
+        //[FindsBy(How = How.Id, Using = "EmailAddress")]
+        //[CacheLookup]
+        //private IWebElement EmailAddress { get; set; }
 
-        [FindsBy(How = How.Id, Using = "Password")]
-        [CacheLookup]
-        private IWebElement Password { get; set; }
+        //[FindsBy(How = How.Id, Using = "Password")]
+        //[CacheLookup]
+        //private IWebElement Password { get; set; }
 
-        [FindsBy(How = How.ClassName, Using = "btn-primary")]
-        [CacheLookup]
-        private IWebElement Submit { get; set; }
+        //[FindsBy(How = How.ClassName, Using = "btn-primary")]
+        //[CacheLookup]
+        //private IWebElement Submit { get; set; }
 
         #endregion
 

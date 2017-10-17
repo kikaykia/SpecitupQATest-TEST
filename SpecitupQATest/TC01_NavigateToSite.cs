@@ -16,9 +16,9 @@ namespace SpecitupQATest
     /// Summary description for UnitTest1
     /// </summary>
     //[TestClass]
-    public class UnitTest1
+    public class TC01_NavigateToSite
     {
-        public UnitTest1()
+        public TC01_NavigateToSite()
         {
             //
             // TODO: Add constructor logic here
@@ -44,11 +44,12 @@ namespace SpecitupQATest
         }
 
         #region Additional test attributes
-       
+
         #endregion
 
         #region variables
-        
+
+        string testSite = "https://specitupv3test.cloudapp.net/Account/Login";
 
         #endregion
 
@@ -56,18 +57,24 @@ namespace SpecitupQATest
         public void Initialize()
         {
             PropertiesCollection.driver = new ChromeDriver();
-            PropertiesCollection.driver.Navigate().GoToUrl("https://specitupv3test.cloudapp.net/Account/Login");
+            //PropertiesCollection.driver.Navigate().GoToUrl(testSite);     
+            
         }
 
 
         [Test]
         public void TestMethod1()
-        {            
+        {
+            IWebDriver _driver = PropertiesCollection.driver;
+            _driver.Manage().Window.Maximize();
+            _driver.Navigate().GoToUrl(testSite);
+
             var loginPage = new LoginPage(PropertiesCollection.driver);
             loginPage.LoginToApplication();                       
 
             var homeDashboardPage = new HomeDashBoardPage(PropertiesCollection.driver);
-           //homeDashboardPage.ClickAutoOptionsLink();           
+            //homeDashboardPage.ClickAutoOptionsLink();  
+            homeDashboardPage.LogoutFromSite();      
 
         }
 
@@ -77,9 +84,9 @@ namespace SpecitupQATest
         [TearDown]
         public void TearDown()
         {
-            //Chrome.Quit();  
-            PropertiesCollection.driver.Close();
-            Console.WriteLine("Closed the browser.");
+            ////Chrome.Quit();  
+            //PropertiesCollection.driver.Close();
+            //Console.WriteLine("Closed the browser.");
 
         }
     }

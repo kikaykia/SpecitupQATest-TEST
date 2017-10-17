@@ -49,8 +49,8 @@ namespace SpecitupQATest.Pages
                 new SelectElement(PropertiesCollection.driver.FindElement(By.Name(element))).SelectByText(value);
             if (elementtype == PropertyType.ClassName)
                 new SelectElement(PropertiesCollection.driver.FindElement(By.ClassName(element))).SelectByText(value);
-            if (elementtype == PropertyType.ClassName)
-                new SelectElement(PropertiesCollection.driver.FindElement(By.ClassName(element))).SelectByText(value);
+            //if (elementtype == PropertyType.ClassName)
+            //    new SelectElement(PropertiesCollection.driver.FindElement(By.ClassName(element))).SelectByText(value);
         }
         #endregion
 

@@ -66,7 +66,7 @@
     <Compile Include="Pages\HomeDashBoardPage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\PropertiesCollection.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="TC01_NavigateToSite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
